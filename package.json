@@ -1,6 +1,6 @@
 {
   "name": "mingoos-stylelint",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Stylelint for CSS & SCSS",
   "main": "index.js",
   "files": [
