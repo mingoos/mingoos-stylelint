@@ -1,6 +1,6 @@
 {
   "name": "mingoos-stylelint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stylelint for CSS & SCSS",
   "main": "index.js",
   "files": [
@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint ": "npx stylelint \"**/*.{css,sass,scss}\"",
-    "lint --force": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
+    "stylelint:": "npx stylelint \"**/*.{css,sass,scss}\"",
+    "stylelint:fix": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,18 @@
     "stylelint": "^13.9.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
+  },
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4"
+  },
+  "lint-staged": {
+    "**/*.{css,sass,scss}": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "scripts/prepare-commit-msg.sh $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   }
 }
