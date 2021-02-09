@@ -1,0 +1,25 @@
+{
+  "name": "mingoos-stylelint",
+  "version": "1.0.0",
+  "description": "Stylelint for CSS & SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint ": "npx stylelint \"**/*.{css,sass,scss}\"",
+    "lint --force": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mingoos/mingoos-stylelint.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "mingoos",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^13.9.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  }
+}
