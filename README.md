@@ -1,3 +1,7 @@
+<p style="text-align: center;">
+  <img src="https://img.shields.io/github/package-json/v/mingoos/mingoos-stylelint?color=%232f9e44&style=plastic" alt="version">
+</p>
+
 # mingoos-stylelint
 
 Basic stylelint rules for CSS, SASS, SCSS
