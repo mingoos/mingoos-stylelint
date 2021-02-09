@@ -1,8 +1,11 @@
 {
   "name": "mingoos-stylelint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stylelint for CSS & SCSS",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint ": "npx stylelint \"**/*.{css,sass,scss}\"",
