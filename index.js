@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     indentation: "tab",
     "max-empty-lines": [
-      1,
+      0,
       {
         ignore: "comments",
       },
