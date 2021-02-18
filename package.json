@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "mingoos-stylelint",
   "description": "Stylelint for CSS & SCSS",
   "homepage": "",
@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "stylelint:": "npx stylelint \"**/*.{css,sass,scss}\"",
+    "stylelint": "npx stylelint \"**/*.{css,sass,scss}\"",
     "stylelint:fix": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
   },
   "dependencies": {

@@ -1,0 +1,15 @@
+@function get-func($arg1, $arg2) {
+	$variables: 10;
+
+	@for $item from 1 through $arg2 {
+		$variables: $variables + $arg1 + $item;
+
+		@if $variables == 2 {
+			@warn "Test Warn";
+		}
+
+		--#{$variables}: $variables;
+	}
+
+	@return $variables;
+}
