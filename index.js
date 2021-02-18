@@ -12,7 +12,6 @@ module.exports = {
     "no-missing-end-of-source-newline": true,
     "no-empty-first-line": true,
     "at-rule-no-unknown": true,
-    "at-rule-empty-line-before": "always",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
     "at-rule-semicolon-newline-after": "always",
