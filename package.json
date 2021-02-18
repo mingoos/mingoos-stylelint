@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "stylelint:": "npx stylelint \"**/*.{css,sass,scss}\"",
+    "stylelint": "npx stylelint \"**/*.{css,sass,scss}\"",
     "stylelint:fix": "npx stylelint \"**/*.{css,sass,scss}\" --fix"
   },
   "dependencies": {
